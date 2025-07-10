@@ -1,0 +1,128 @@
+/* index.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #4a505a;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+header h2 {
+  margin: 5px 0 0 0;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.folder-card, .file-card {
+  background-color: #3b4049;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s, background-color 0.2s;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.folder-card {
+  cursor: pointer;
+}
+
+.folder-card:hover {
+  transform: translateY(-5px);
+  background-color: #4a505a;
+}
+
+.file-card {
+  cursor: default;
+  background-color: #333;
+  opacity: 0.7;
+}
+
+.card-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #61dafb;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #3b4049;
+  border-radius: 8px;
+}
+
+.chat-container h3 {
+  margin-top: 0;
+}
+
+.chat-box {
+  background: #282c34;
+  border-radius: 5px;
+  padding: 15px;
+  min-height: 100px;
+  margin-bottom: 15px;
+  white-space: pre-wrap; /* This makes the text wrap nicely */
+  line-height: 1.5;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a505a;
+  color: white;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  background-color: #61dafb;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-input button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
